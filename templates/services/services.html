@@ -11,13 +11,28 @@
 
 <body>
 
-    <nav>
-        <a href="index.html" class="nav-logo">ANTHONY<span>MEDIA GROUP</span></a>
+    <nav id="navbar">
+        <a href="{% url 'home' %}">
+            <div class="nav-logo">StackSquads<span> GROUP</span></div>
+        </a>
         <div class="nav-links">
-            <span class="nav-drop active">Services</span>
+            <div class="dropdown">
+                <a href="{% url 'services' %}" class="dropdown-title">
+                    Services
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'web_service' %}">Web Design & Development</a>
+                    <a href="{% url 'seo_service' %}">SEO</a>
+                    <a href="{% url 'google_ad_service' %}">Google Ads</a>
+                    <a href="{% url 'social_service' %}">Social Marketing</a>
+                    <a href="{% url 'video_service' %}">Video Marketing</a>
+                    <a href="{% url 'public_service' %}">Public Relations</a>
+                </div>
+            </div>
             <!-- <a href="#">Portfolio</a> -->
-            <a href="#">Contact</a>
-            <a href="#" class="btn-cta">Free Consultation</a>
+            <a href="{% url 'contact_us' %}">Contact</a>
+            <a href="{% url 'contact_us' %}" class="btn-cta">Free Consultation</a>
         </div>
     </nav>
 
@@ -60,7 +75,7 @@
                             <div class="svc-feat">WordPress, Shopify, or custom builds</div>
                             <div class="svc-feat">Landing pages built to convert</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -102,7 +117,7 @@
                             <div class="svc-feat">Local SEO to dominate your area</div>
                             <div class="svc-feat">Monthly reporting &amp; ranking tracking</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -143,7 +158,7 @@
                             <div class="svc-feat">Landing page strategy &amp; A/B testing</div>
                             <div class="svc-feat">Weekly performance reports</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -183,7 +198,7 @@
                             <div class="svc-feat">Community management &amp; engagement</div>
                             <div class="svc-feat">Performance analytics &amp; monthly reporting</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -225,7 +240,7 @@
                             <div class="svc-feat">YouTube channel management &amp; growth</div>
                             <div class="svc-feat">Video ad strategy &amp; media buying</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -266,7 +281,7 @@
                             <div class="svc-feat">Influencer &amp; blogger partnerships</div>
                             <div class="svc-feat">Crisis communications strategy</div>
                         </div>
-                        <a href="#" class="btn-service">Get Started →</a>
+                        <a href="{% url 'contact_us' %}" class="btn-service">Get Started →</a>
                     </div>
                     <div class="svc-visual">
                         <div class="svc-card-big">
@@ -296,30 +311,31 @@
                 <h2>Ready to grow your business<br>with the right strategy?</h2>
                 <p>Book a free consultation today and let's map out exactly which services will drive the biggest impact
                     for your business.</p>
-                <a href="#" class="btn-dark">📅 Book a Free Consultation</a>
+                <a href="{% url 'contact_us' %}" class="btn-dark">📅 Book a Free Consultation</a>
             </div>
         </div>
 
         <footer>
             <div class="ft-top">
                 <div class="ft-links">
-                    <a href="#">About AMG</a>
+                    <a href="{% url 'about_us' %}">About AMG</a>
                     <!-- <a href="#">Portfolio</a> -->
-                    <a href="#">Contact Us</a>
-                    <a href="#" class="active">Services</a>
-                    <a href="#">Careers</a>
-                </div>
-                <div class="ft-socials">
-                    <div class="s-icon">ig</div>
-                    <div class="s-icon">yt</div>
-                    <div class="s-icon">tk</div>
+                    <a href="{% url 'contact_us' %}">Contact Us</a>
+                    <a href="{% url 'services' %}" class="active">Services</a>
+                    <a href="{% url 'career' %}">Careers</a>
                 </div>
             </div>
-            <div class="ft-bottom">
-                <div class="ft-logo">ANTHONY<small>MEDIA GROUP</small></div>
-                <div class="ft-copy">© Copyright 2025 Anthony Media Group. All rights reserved.</div>
+            <div class="ft-socials">
+                <div class="s-icon">ig</div>
+                <div class="s-icon">yt</div>
+                <div class="s-icon">tk</div>
             </div>
-        </footer>
+    </div>
+    <div class="ft-bottom">
+        <div class="ft-logo">ANTHONY<small>MEDIA GROUP</small></div>
+        <div class="ft-copy">© Copyright 2025 Anthony Media Group. All rights reserved.</div>
+    </div>
+    </footer>
 
     </div>
 

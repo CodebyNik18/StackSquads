@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +10,29 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html" class="nav-logo">ANTHONY<span>MEDIA GROUP</span></a>
-        <div class="nav-links"><span class="nav-drop">Services</span><a href="#">Portfolio</a><a href="#">Contact</a><a
-                href="#" class="btn-cta">Free Consultation</a></div>
+    <nav id="navbar">
+        <a href="{% url 'home' %}">
+            <div class="nav-logo">StackSquads<span> GROUP</span></div>
+        </a>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="{% url 'services' %}" class="dropdown-title">
+                    Services
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'web_service' %}">Web Design & Development</a>
+                    <a href="{% url 'seo_service' %}">SEO</a>
+                    <a href="{% url 'google_ad_service' %}">Google Ads</a>
+                    <a href="{% url 'social_service' %}">Social Marketing</a>
+                    <a href="{% url 'video_service' %}">Video Marketing</a>
+                    <a href="{% url 'public_service' %}">Public Relations</a>
+                </div>
+            </div>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="{% url 'contact_us' %}">Contact</a>
+            <a href="{% url 'contact_us' %}" class="btn-cta">Free Consultation</a>
+        </div>
     </nav>
 
     <section class="hero">
@@ -25,7 +45,7 @@
                 <p>We create and manage highly effective Google Ads campaigns that put your business in front of
                     customers who are actively searching for exactly what you offer — maximizing every dollar of your ad
                     spend.</p>
-                <div class="hero-btns"><a href="#" class="btn-primary">Get Started →</a><a href="services.html"
+                <div class="hero-btns"><a href="{% url 'contact_us' %}" class="btn-primary">Get Started →</a><a href="{% url 'services' %}"
                         class="btn-outline">All Services</a></div>
             </div>
             <div class="hero-right">
@@ -213,19 +233,25 @@
             <h2>Ready to make every ad dollar count?</h2>
             <p>Book a free Google Ads consultation. We'll audit your current campaigns (or build a fresh strategy) and
                 show you exactly how we'll maximize your ROI.</p>
-            <a href="#" class="btn-dark">📅 Get My Free Ads Audit</a>
+            <a href="{% url 'contact_us' %}" class="btn-dark">📅 Get My Free Ads Audit</a>
         </div>
     </div>
 
     <footer>
         <div class="ft-top">
-            <div class="ft-links"><a href="#">About AMG</a><a href="#">Portfolio</a><a href="#">Contact Us</a><a
-                    href="#" class="active">Services</a><a href="#">Careers</a></div>
-            <div class="ft-socials">
-                <div class="s-icon">ig</div>
-                <div class="s-icon">yt</div>
-                <div class="s-icon">tk</div>
+            <div class="ft-links">
+                <a href="{% url 'about_us' %}">About AMG</a>
+                <!-- <a href="#">Portfolio</a> -->
+                <a href="{% url 'contact_us' %}">Contact Us</a>
+                <a href="{% url 'services' %}" class="active">Services</a>
+                <a href="{% url 'career' %}">Careers</a>
             </div>
+        </div>
+        <div class="ft-socials">
+            <div class="s-icon">ig</div>
+            <div class="s-icon">yt</div>
+            <div class="s-icon">tk</div>
+        </div>
         </div>
         <div class="ft-bottom">
             <div class="ft-logo">ANTHONY<small>MEDIA GROUP</small></div>

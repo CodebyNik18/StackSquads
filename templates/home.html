@@ -25,12 +25,12 @@
                 </a>
 
                 <div class="dropdown-menu">
-                    <a href="#">Web Design & Development</a>
-                    <a href="#">SEO</a>
-                    <a href="#">Google Ads</a>
-                    <a href="#">Social Marketing</a>
-                    <a href="#">Video Marketing</a>
-                    <a href="#">Public Relations</a>
+                    <a href="{% url 'web_service' %}">Web Design & Development</a>
+                    <a href="{% url 'seo_service' %}">SEO</a>
+                    <a href="{% url 'google_ad_service' %}">Google Ads</a>
+                    <a href="{% url 'social_service' %}">Social Marketing</a>
+                    <a href="{% url 'video_service' %}">Video Marketing</a>
+                    <a href="{% url 'public_service' %}">Public Relations</a>
                 </div>
             </div>
             <!-- <a href="#">Portfolio</a> -->
@@ -310,7 +310,7 @@
             <div class="footer-links">
                 <a href="{% url 'about_us' %}">About AMG</a>
                 <a href="{% url 'contact_us' %}">Contact Us</a>
-                <a href="#">Services</a>
+                <a href="{% url 'services' %}">Services</a>
                 <a href="{% url 'career' %}">Careers</a>
             </div>
             <div class="footer-socials">

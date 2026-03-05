@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +10,29 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html" class="nav-logo">ANTHONY<span>MEDIA GROUP</span></a>
-        <div class="nav-links"><span class="nav-drop">Services</span><a href="#">Portfolio</a><a href="#">Contact</a><a
-                href="#" class="btn-cta">Free Consultation</a></div>
+    <nav id="navbar">
+        <a href="{% url 'home' %}">
+            <div class="nav-logo">StackSquads<span> GROUP</span></div>
+        </a>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="{% url 'services' %}" class="dropdown-title">
+                    Services
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'web_service' %}">Web Design & Development</a>
+                    <a href="{% url 'seo_service' %}">SEO</a>
+                    <a href="{% url 'google_ad_service' %}">Google Ads</a>
+                    <a href="{% url 'social_service' %}">Social Marketing</a>
+                    <a href="{% url 'video_service' %}">Video Marketing</a>
+                    <a href="{% url 'public_service' %}">Public Relations</a>
+                </div>
+            </div>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="{% url 'contact_us' %}">Contact</a>
+            <a href="{% url 'contact_us' %}" class="btn-cta">Free Consultation</a>
+        </div>
     </nav>
     <section class="hero">
         <canvas id="hero-canvas"></canvas>
@@ -23,8 +43,9 @@
                 <h1>Social Media<br><em>Marketing</em></h1>
                 <p>We manage and grow your brand across every major social platform — crafting content that stops the
                     scroll, builds a loyal audience, and turns followers into paying customers.</p>
-                <div class="hero-btns"><a href="#" class="btn-primary">Get Started →</a><a href="services.html"
-                        class="btn-outline">All Services</a></div>
+                <div class="hero-btns">
+                    <a href="{% url 'contact_us' %}" class="btn-primary">Get Started →</a>
+                    <a href="{% url 'services' %}" class="btn-outline">All Services</a></div>
             </div>
             <div class="hero-right">
                 <div class="mockup-window">
@@ -207,18 +228,24 @@
             <h2>Ready to build a social presence that actually converts?</h2>
             <p>Book a free consultation and we'll show you exactly how we'd grow your brand on social — with a strategy
                 built specifically for your business.</p>
-            <a href="#" class="btn-dark">📅 Book a Free Consultation</a>
+            <a href="{% url 'contact_us' %}" class="btn-dark">📅 Book a Free Consultation</a>
         </div>
     </div>
     <footer>
         <div class="ft-top">
-            <div class="ft-links"><a href="#">About AMG</a><a href="#">Portfolio</a><a href="#">Contact Us</a><a
-                    href="#" class="active">Services</a><a href="#">Careers</a></div>
-            <div class="ft-socials">
-                <div class="s-icon">ig</div>
-                <div class="s-icon">yt</div>
-                <div class="s-icon">tk</div>
+            <div class="ft-links">
+                <a href="{% url 'about_us' %}">About AMG</a>
+                <!-- <a href="#">Portfolio</a> -->
+                <a href="{% url 'contact_us' %}">Contact Us</a>
+                <a href="{% url 'services' %}" class="active">Services</a>
+                <a href="{% url 'career' %}">Careers</a>
             </div>
+        </div>
+        <div class="ft-socials">
+            <div class="s-icon">ig</div>
+            <div class="s-icon">yt</div>
+            <div class="s-icon">tk</div>
+        </div>
         </div>
         <div class="ft-bottom">
             <div class="ft-logo">ANTHONY<small>MEDIA GROUP</small></div>
