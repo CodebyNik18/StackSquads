@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Anthony Media Group</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="{% url 'home' %}">
+            <div class="nav-logo">StackSquads<span> GROUP</span></div>
+        </a>
+        <div class="nav-r">
+            <div class="dropdown">
+                <a href="{% url 'services' %}" class="dropdown-title">
+                    Services
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="{% url 'web_service' %}">Web Design & Development</a>
+                    <a href="{% url 'seo_service' %}">SEO</a>
+                    <a href="{% url 'google_ad_service' %}">Google Ads</a>
+                    <a href="{% url 'social_service' %}">Social Marketing</a>
+                    <a href="{% url 'video_service' %}">Video Marketing</a>
+                    <a href="{% url 'public_service' %}">Public Relations</a>
+                </div>
+            </div>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="{% url 'contact_us' %}" class="active">Contact</a>
+            <a href="{% url 'contact_us' %}" class="nav-pill">Free Consultation</a>
+        </div>
+    </nav>
+
+    <div class="split">
+
+        <div class="left-panel">
+            <canvas id="bgCanvas"></canvas>
+            <div class="scan-line"></div>
+            <div class="corner-tl"></div>
+            <div class="corner-br"></div>
+
+            <div class="left-content">
+                <div class="left-eyebrow">Start a conversation</div>
+
+                <h1 class="left-headline">
+                    Let's build<br>
+                    something<br>
+                    <span class="italic">remarkable.</span>
+                </h1>
+
+                <p class="left-tagline">
+                    We collaborate with ambitious brands to create strategies that don't just get attention — they drive
+                    real, measurable growth. Tell us about your vision.
+                </p>
+
+                <!-- <div class="left-divider"></div> -->
+
+                <!-- <div class="left-stats">
+                    <div class="l-stat">
+                        <div class="num">250<span>+</span></div>
+                        <div class="lbl">Clients Served</div>
+                    </div>
+                    <div class="l-stat">
+                        <div class="num">8<span>×</span></div>
+                        <div class="lbl">Avg. ROAS</div>
+                    </div>
+                    <div class="l-stat">
+                        <div class="num">98<span>%</span></div>
+                        <div class="lbl">Satisfaction</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="right-panel">
+
+            <div class="form-intro">
+                <span class="form-step-label">Get in touch</span>
+                <h2>Tell us about<br><em>your project</em></h2>
+            </div>
+
+            <form id="cf" novalidate>
+
+                <div class="row-2">
+                    <div class="fld">
+                        <input type="text" id="fname" placeholder=" ">
+                        <label for="fname">Your Name</label>
+                        <div class="fld-bar"></div>
+                        <div class="err-msg" id="fnameErr">Name is required.</div>
+                    </div>
+                    <div class="fld">
+                        <input type="email" id="femail" placeholder=" ">
+                        <label for="femail">Email Address</label>
+                        <div class="fld-bar"></div>
+                        <div class="err-msg" id="femailErr">Enter a valid email.</div>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="fld">
+                        <input type="tel" id="fphone" placeholder=" ">
+                        <label for="fphone">Phone Number</label>
+                        <div class="fld-bar"></div>
+                        <div class="err-msg" id="fphoneErr">Phone is required.</div>
+                    </div>
+                    <div class="fld">
+                        <input type="text" id="fcompany" placeholder=" ">
+                        <label for="fcompany">Company</label>
+                        <div class="fld-bar"></div>
+                    </div>
+                </div>
+
+                <div class="svc-block">
+                    <span class="svc-lbl">Services I'm interested in</span>
+                    <div class="pills">
+                        <div class="pill"><input type="checkbox" id="p1"><label for="p1">Web Design</label></div>
+                        <div class="pill"><input type="checkbox" id="p2"><label for="p2">SEO</label></div>
+                        <div class="pill"><input type="checkbox" id="p3"><label for="p3">Email &amp; SMS</label></div>
+                        <div class="pill"><input type="checkbox" id="p4"><label for="p4">Meta Ads</label></div>
+                        <div class="pill"><input type="checkbox" id="p5"><label for="p5">Google Ads</label></div>
+                        <div class="pill"><input type="checkbox" id="p6"><label for="p6">Social Media</label></div>
+                        <div class="pill"><input type="checkbox" id="p7"><label for="p7">Video Marketing</label></div>
+                        <div class="pill"><input type="checkbox" id="p8"><label for="p8">Public Relations</label></div>
+                        <div class="pill"><input type="checkbox" id="p9"><label for="p9">Other</label></div>
+                    </div>
+                </div>
+
+                <div class="fld area">
+                    <span class="area-label">Message</span>
+                    <textarea id="fmsg" placeholder="Describe your goals, timeline, or anything we should know…"
+                        rows="4"></textarea>
+                </div>
+
+                <div class="terms-row">
+                    <input type="checkbox" id="fterms">
+                    <span>I agree to Anthony Media Group's Terms of Service and Privacy
+                            Policy.</span>
+                </div>
+                <div class="terms-err-msg" id="ftermsErr">Please accept the terms to continue.</div>
+
+                <div class="submit-row">
+                    <button type="submit" class="btn-send" id="fsubmit">
+                        <span class="label">Send Message</span>
+                        <span class="arrow">→</span>
+                    </button>
+                    <span class="send-note">Response within 1 business day</span>
+                </div>
+
+                <div class="success-card" id="fsuccess">
+                    <div class="s-title">Message <span>received.</span></div>
+                    <p>Thank you for reaching out. A member of our team will review your message and be in touch with
+                        you very shortly.</p>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="ft-links">
+            <a href="{% url 'about_us' %}" class="active">About AMG</a>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="{% url 'contact_us' %}">Contact Us</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="{% url 'career' %}">Careers</a>
+        </div>
+        <div class="ft-right">
+            <!-- <div class="ft-socials">
+                <a href="#" class="ft-s">ig</a>
+                <a href="#" class="ft-s">yt</a>
+                <a href="#" class="ft-s">tk</a>
+            </div> -->
+            <span class="ft-copy">© 2025 Anthony Media Group</span>
+        </div>
+    </footer>
+    <script src="{% static 'js/contact.js' %}"></script>
+</body>
+
+</html>

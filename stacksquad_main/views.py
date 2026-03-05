@@ -16,7 +16,7 @@ def aboutus(request):
     return render(request=request, template_name='about.html')
 
 def contactus(request):
-    return HttpResponse("<h1> Contact Us Page. </h1>")
+    return render(request=request, template_name='contact.html')
 
 def careers(request):
     return render(request=request, template_name='career.html')
