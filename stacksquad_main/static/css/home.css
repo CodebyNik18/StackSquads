@@ -512,7 +512,7 @@ nav.scrolled {
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: rgba(238, 244, 255, .25);
+    color: rgba(243, 245, 248, 0.915);
     text-transform: uppercase;
     white-space: nowrap;
     flex-shrink: 0;
