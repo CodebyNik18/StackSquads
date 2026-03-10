@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Relations – AiGR0 Group</title>
+    <title>Creative & Graphic Design – AiGR0 Group</title>
     <link rel="stylesheet" href="{% static 'css/services/public_service.css' %}">
 </head>
 
@@ -14,7 +14,7 @@
         <a href="{% url 'home' %}">
             <img src="{% static 'images/aigro1.png' %}" class="nav-logo" alt="AiGR0 Logo">
         </a>
-                <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
             <span></span>
             <span></span>
             <span></span>
@@ -24,14 +24,13 @@
                 <a href="{% url 'services' %}" class="dropdown-title" aria-haspopup="true" aria-expanded="false">
                     Services
                 </a>
-
                 <div class="dropdown-menu">
                     <a href="{% url 'web_service' %}">Web Design & Development</a>
                     <a href="{% url 'seo_service' %}">SEO</a>
                     <a href="{% url 'google_ad_service' %}">Google Ads</a>
                     <a href="{% url 'social_service' %}">Social Marketing</a>
                     <a href="{% url 'video_service' %}">Video Marketing</a>
-                    <!-- <a href="{% url 'public_service' %}">Public Relations</a> -->
+                    <a href="{% url 'public_service' %}">Creative & Graphic Design</a>
                 </div>
             </div>
             <!-- <a href="#">Portfolio</a> -->
@@ -39,15 +38,16 @@
             <a href="{% url 'contact_us' %}" class="btn-cta">Free Consultation</a>
         </div>
     </nav>
+
     <section class="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="hero-inner">
             <div class="hero-left">
-                <div class="breadcrumb">Services <span>›</span> Public Relations</div>
+                <div class="breadcrumb">Services <span>›</span> Creative & Graphic Design</div>
                 <div class="hero-eye">Service 06</div>
-                <h1>Public<br><em>Relations</em></h1>
-                <p>We get your brand featured in the publications, blogs, and outlets your audience trusts —
-                    building authority, credibility, and awareness that no paid ad can replicate.</p>
+                <h1>Creative &<br><em>Graphic Design</em></h1>
+                <p>We craft visuals that stop the scroll — logos, brand identities, social graphics, and marketing
+                    materials that make your brand impossible to ignore and unforgettable to your audience.</p>
                 <div class="hero-btns">
                     <a href="{% url 'contact_us' %}" class="btn-primary">Get Started →</a>
                     <a href="{% url 'services' %}" class="btn-outline">All Services</a>
@@ -55,211 +55,199 @@
             </div>
             <div class="hero-right">
                 <div class="mockup-window">
-
                     <div class="mockup-body">
 
                         <h3 style="color:#00d4ff;margin-bottom:1rem;">
-                            Build Authority With Strategic PR
+                            Visuals That Build Brands
                         </h3>
 
                         <p style="color:#8ba3c0;font-size:.9rem;margin-bottom:1.2rem;line-height:1.7;">
-                            Our public relations strategies position your brand in front of the
-                            right audience through trusted publications, powerful storytelling,
-                            and strategic placements that strengthen credibility.
+                            Our design team creates stunning, on-brand visuals across every touchpoint —
+                            from your logo and brand identity to social media graphics and full marketing
+                            collateral that converts attention into action.
                         </p>
 
                         <div style="display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1rem;">
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                📰 Outreach
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                🎨 Logo Design
                             </div>
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                ✍️ Press Releases
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                🖌️ Brand Identity
                             </div>
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                🌍 Brand Storytelling
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                📱 Social Graphics
                             </div>
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                ⭐ Authority Building
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                📄 Print & Collateral
                             </div>
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                📢 Placements
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                🎬 Motion Graphics
                             </div>
-
-                            <div
-                                style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
-                                📈 Reputation Growth
+                            <div style="background:rgba(0,212,255,.08);padding:.6rem .8rem;border-radius:6px;color:#00d4ff;font-size:.8rem;">
+                                📦 Packaging Design
                             </div>
-
                         </div>
 
                         <div style="font-size:.8rem;color:#8ba3c0;">
-                            🚀 Stronger credibility • 📰 High-authority coverage • 🌎 Global brand visibility
+                            🎨 Bold visuals • 🖼️ Consistent brand identity • ✨ Designs that convert
                         </div>
 
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+
     <div class="section">
         <p class="section-label">What's Included</p>
-        <h2 class="section-title">Everything you need to build a powerful reputation</h2>
-        <p class="section-sub">We combine strategic outreach, compelling storytelling, and strong publisher
-            relationships to get your brand featured where it matters most.</p>
+        <h2 class="section-title">Everything you need to build a visually powerful brand</h2>
+        <p class="section-sub">From your first logo to a complete visual identity system, we design every asset
+            your business needs to look professional, consistent, and compelling across all channels.</p>
         <div class="included-grid">
-            <div class="inc-card"><span class="inc-icon">📰</span>
-                <h4>Press Release Writing</h4>
-                <p>Professional, newsworthy press releases written to get picked up by journalists and publications in
-                    your industry.</p>
+            <div class="inc-card"><span class="inc-icon">🎨</span>
+                <h4>Logo & Brand Identity</h4>
+                <p>Custom logo design and full brand identity systems — including colour palettes, typography, and
+                    usage guidelines that keep your brand consistent everywhere it appears.</p>
             </div>
-            <div class="inc-card"><span class="inc-icon">🌐</span>
-                <h4> Outreach</h4>
-                <p>Direct outreach to journalists, editors, and bloggers at top publications — using our established
-                    relationships to earn you placements.</p>
+            <div class="inc-card"><span class="inc-icon">📱</span>
+                <h4>Social Media Graphics</h4>
+                <p>Scroll-stopping post designs, story templates, cover images, and ad creatives tailored to each
+                    platform and optimised to drive engagement and clicks.</p>
             </div>
-            <div class="inc-card"><span class="inc-icon">🔗</span>
-                <h4>High-Authority Backlinks</h4>
-                <p>Every PR placement comes with a powerful backlink from a trusted domain — boosting your SEO authority
-                    and search rankings simultaneously.</p>
+            <div class="inc-card"><span class="inc-icon">📄</span>
+                <h4>Print & Marketing Collateral</h4>
+                <p>Business cards, flyers, brochures, banners, and event materials designed to make a strong
+                    impression whether you're online, in-store, or at an event.</p>
             </div>
-            <div class="inc-card"><span class="inc-icon">🌟</span>
-                <h4>Brand Reputation Management</h4>
-                <p>We monitor, protect, and actively shape how your brand is perceived online — keeping your reputation
-                    strong and your narrative on point.</p>
+            <div class="inc-card"><span class="inc-icon">🎬</span>
+                <h4>Motion Graphics & Animations</h4>
+                <p>Animated logos, social reels, explainer animations, and motion graphics that bring your brand
+                    to life and dramatically increase content engagement rates.</p>
             </div>
-            <div class="inc-card"><span class="inc-icon">🤝</span>
-                <h4>Influencer & Blogger Outreach</h4>
-                <p>Partnerships with relevant influencers and industry bloggers that extend your reach and add authentic
-                    third-party credibility.</p>
+            <div class="inc-card"><span class="inc-icon">📦</span>
+                <h4>Packaging & Product Design</h4>
+                <p>Eye-catching packaging and product label designs that stand out on shelves and online listings,
+                    communicating quality and reinforcing your brand story at the point of purchase.</p>
             </div>
-            <div class="inc-card"><span class="inc-icon">🏆</span>
-                <h4>Award Submissions</h4>
-                <p>We identify and submit your business for relevant industry awards and recognition programs that build
-                    prestige and visibility.</p>
+            <div class="inc-card"><span class="inc-icon">🖥️</span>
+                <h4>UI & Digital Asset Design</h4>
+                <p>Landing page mockups, email templates, digital ads, and website graphics designed with
+                    conversion in mind — beautiful and built to perform.</p>
             </div>
         </div>
     </div>
+
     <div class="process-bg">
         <div class="section">
-            <p class="section-label">Our PR Process</p>
-            <h2 class="section-title">How we earn you coverage</h2>
-            <p class="section-sub">A strategic, relationship-driven approach that secures real placements in
-                publications your audience actually reads.</p>
+            <p class="section-label">Our Design Process</p>
+            <h2 class="section-title">How we bring your brand vision to life</h2>
+            <p class="section-sub">A collaborative, structured process that ensures every design we deliver
+                is on-brand, on-time, and exactly what your business needs.</p>
             <div class="process-list">
                 <div class="process-step">
                     <div class="ps-num">01</div>
                     <div class="ps-body">
-                        <h4>Brand Story Development</h4>
-                        <p>We work with you to identify your most compelling stories, angles, and unique perspectives
-                            that will genuinely interest journalists and editors.</p>
+                        <h4>Discovery & Brand Brief</h4>
+                        <p>We start by getting deep into your brand — your values, audience, competitors, and goals.
+                            This brief becomes the foundation every design decision is built on.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="ps-num">02</div>
                     <div class="ps-body">
-                        <h4>Target List Building</h4>
-                        <p>We build a curated list of the most relevant publications, journalists, and bloggers in your
-                            industry — focused on the outlets your ideal customers actually read.</p>
+                        <h4>Concept & Mood Boarding</h4>
+                        <p>We develop initial visual directions, style references, and mood boards so you can see
+                            the creative vision before a single pixel is placed. Your input shapes everything.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="ps-num">03</div>
                     <div class="ps-body">
-                        <h4>Pitch Creation</h4>
-                        <p>We craft personalized, compelling pitches and press releases that grab attention and
-                            give journalists a real reason to feature your brand.</p>
+                        <h4>Design & Creation</h4>
+                        <p>Our designers get to work building your assets — with careful attention to hierarchy,
+                            colour psychology, typography, and every detail that makes great design great.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="ps-num">04</div>
                     <div class="ps-body">
-                        <h4>Outreach & Follow-Up</h4>
-                        <p>We reach out to our contacts directly and follow up strategically — using our
-                            established relationships to maximize placement rates.</p>
+                        <h4>Review & Refinement</h4>
+                        <p>We present the designs, gather your feedback, and refine until every element is exactly
+                            right. We don't stop until you're genuinely proud of what we've created together.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="ps-num">05</div>
                     <div class="ps-body">
-                        <h4>Report & Amplify</h4>
-                        <p>We report all secured placements and help you amplify the coverage across your own channels
-                            to maximize its impact and reach.</p>
+                        <h4>Final Delivery & Brand Guide</h4>
+                        <p>We deliver all final files in every format you need — print-ready, web-optimised, and
+                            accompanied by a brand style guide so your team uses every asset correctly.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="section">
         <p class="section-label">Tools & Platforms</p>
-        <h2 class="section-title">How we find and pitch the right </h2>
+        <h2 class="section-title">The tools we use to create world-class designs</h2>
         <div class="tools-flex">
-            <div class="tool-chip">📡 PR Newswire</div>
-            <div class="tool-chip">🌐 BusinessWire</div>
-            <div class="tool-chip">📰 Cision</div>
-            <div class="tool-chip">🔍 MuckRack</div>
-            <div class="tool-chip">📊 BuzzSumo</div>
-            <div class="tool-chip">🔗 Meltwater</div>
-            <div class="tool-chip">📋 HARO</div>
-            <div class="tool-chip">🅶 Google News</div>
-            <div class="tool-chip">⚙️ Ahrefs (DR tracking)</div>
-            <div class="tool-chip">📌 MuckRack</div>
+            <div class="tool-chip">🎨 Adobe Illustrator</div>
+            <div class="tool-chip">🖼️ Adobe Photoshop</div>
+            <div class="tool-chip">📐 Adobe InDesign</div>
+            <div class="tool-chip">✏️ Figma</div>
+            <div class="tool-chip">🎬 Adobe After Effects</div>
+            <div class="tool-chip">🎥 Adobe Premiere Pro</div>
+            <div class="tool-chip">📦 Canva Pro</div>
+            <div class="tool-chip">🖌️ Procreate</div>
+            <div class="tool-chip">🔤 Google Fonts</div>
+            <div class="tool-chip">⚙️ Spline (3D Design)</div>
         </div>
     </div>
+
     <div class="process-bg">
         <div class="section">
             <p class="section-label">Common Questions</p>
-            <h2 class="section-title">Public Relations FAQ</h2>
+            <h2 class="section-title">Creative & Graphic Design FAQ</h2>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-q">What kind of publications can you get us featured in? <span
-                            class="faq-arrow">▾</span></div>
+                    <div class="faq-q">How many revisions are included? <span class="faq-arrow">▾</span></div>
                     <div class="faq-a">
-                        <div class="faq-a-inner">It depends on your industry and story, but our network includes
-                            national outlets, industry-specific trade publications, regional news sites, and
-                            high-authority blogs. We target the publications that your specific audience reads and
-                            trusts.</div>
+                        <div class="faq-a-inner">All projects include multiple revision rounds — we don't cap
+                            revisions because we'd rather spend extra time getting it right than deliver something
+                            you're not completely happy with. We work with you until the design is exactly what
+                            you envisioned.</div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-q">How long does it take to get coverage? <span class="faq-arrow">▾</span>
-                    </div>
+                    <div class="faq-q">Will I own the final design files? <span class="faq-arrow">▾</span></div>
                     <div class="faq-a">
-                        <div class="faq-a-inner">Most clients start seeing placements within 4–8 weeks of starting the
-                            campaign. Some opportunities move faster, while top-tier national publications may take
-                            longer. PR is a relationship-driven process — results build over time.</div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Can you guarantee specific placements? <span class="faq-arrow">▾</span></div>
-                    <div class="faq-a">
-                        <div class="faq-a-inner">We can't guarantee specific placements — no ethical PR firm can.
-                            However, our track record is strong because we only pursue placements where there's a
-                            genuine fit between your story and the publication's audience. We focus on quality over
-                            volume.</div>
+                        <div class="faq-a-inner">Yes — upon final payment you receive full ownership of all
+                            deliverables, including editable source files (AI, PSD, Figma, etc.). Your brand
+                            assets are yours completely, with no licensing restrictions.</div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-q">Does PR help with SEO? <span class="faq-arrow">▾</span></div>
+                    <div class="faq-q">How long does a logo or brand identity project take? <span class="faq-arrow">▾</span></div>
                     <div class="faq-a">
-                        <div class="faq-a-inner">Absolutely. Every placement typically includes a backlink from a
-                            high-authority domain — which directly improves your website's domain authority and search
-                            rankings. PR and SEO work together powerfully when done right.</div>
+                        <div class="faq-a-inner">A logo project typically takes 1–2 weeks from brief to final
+                            delivery. A full brand identity system (logo, colours, typography, guidelines, and
+                            collateral) generally takes 3–5 weeks depending on scope and feedback turnaround times.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">Can you match our existing brand if we just need new assets? <span class="faq-arrow">▾</span></div>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">Absolutely. If you already have an established brand identity,
+                            we can create new assets — social graphics, print materials, ads, or animations —
+                            that match your existing style perfectly. Just share your brand guide and existing
+                            files and we'll take it from there.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <section class="cta-section grid-bg">
         <div class="cta-box">
             <h2>Ready to grow your business<br>with a team that truly cares?</h2>
@@ -268,6 +256,7 @@
             <a href="{% url 'contact_us' %}" class="btn-dark">📅 Book a Free Consultation</a>
         </div>
     </section>
+
     <footer>
         <div class="ft-top">
             <div class="ft-links">
@@ -284,12 +273,12 @@
             <div class="s-icon">yt</div>
             <div class="s-icon">tk</div>
         </div>
-        </div>
         <div class="ft-bottom">
             <div class="ft-logo">AiGR0<small> GROUP</small></div>
             <div class="ft-copy">© Copyright 2026 AiGR0 Group. All rights reserved.</div>
         </div>
     </footer>
+
     <script src="{% static 'js/services/public_service.js' %}"></script>
     <script src="{% static 'js/nav.js' %}"></script>
 </body>
