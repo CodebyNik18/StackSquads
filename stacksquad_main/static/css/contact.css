@@ -169,7 +169,7 @@ a {
     line-height: 1.15;
     animation: fadeDown .7s .1s both;
 
-    height: 75px;
+    height: 125px !important;
     width: auto;
     display: block;
     filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.3));

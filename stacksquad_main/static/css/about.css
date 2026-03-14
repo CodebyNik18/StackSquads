@@ -81,7 +81,7 @@ body.menu-open {
 .nav-logo {
     display: block;
     width: auto;
-    height: 72px;
+    height: 125px !important;
     margin-top: 10px;
     filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.3));
     animation: fadeDown 0.7s 0.1s both;

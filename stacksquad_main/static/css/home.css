@@ -114,7 +114,7 @@ nav.scrolled {
     line-height: 1.15;
     animation: fadeDown .7s .1s both;
     transition: transform .25s ease, filter .25s ease;
-    height: 75px;
+    height: 125px;
     width: auto;
     display: block;
     filter: drop-shadow(0 0 6px rgba(244, 124, 32, 0.2));
