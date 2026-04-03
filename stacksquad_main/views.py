@@ -71,7 +71,10 @@ Please contact this lead as soon as possible.
                 reply_to=[email]
             )
             
-            contact_email.send(fail_silently=False)
+            try:
+                contact_email.send()
+            except Exception as e:
+                print("Email failed:", e)
             
             messages.success(request, "Your message has been sent successfully. Our team will contact you within 1 business day.")
             return redirect('contact_us')
