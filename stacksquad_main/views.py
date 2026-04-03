@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from website.models import Home_HeroSection, Home_ApproachSection
-from django.http import HttpResponse
 from django.contrib import messages
 from services.models import ConsultationRequest
 from django.core.mail import EmailMessage
