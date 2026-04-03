@@ -71,6 +71,7 @@ Please contact this lead as soon as possible.
                 reply_to=[email]
             )
             
+            print("🔥 CONTACT VIEW HIT 🔥")
             try:
                 contact_email.send()
             except Exception as e:
