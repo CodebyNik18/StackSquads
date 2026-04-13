@@ -4,7 +4,10 @@ from django.contrib import messages
 from services.models import ConsultationRequest
 from django.core.mail import EmailMessage
 from django.conf import settings
+import resend
+import os
 
+resend.api_key = os.getenv('RESEND_API_KEY')
 
 def home(request):
     hero_data = Home_HeroSection.objects.first()
@@ -63,19 +66,12 @@ Message:
 Please contact this lead as soon as possible.
 """
             
-            contact_email = EmailMessage(
-                subject=f"New Consultation Request – {name}",
-                body=email_message,
-                from_email=settings.EMAIL_HOST_USER,
-                to=[settings.EMAIL_HOST_USER],
-                reply_to=[email]
-            )
-            
-            print("🔥 CONTACT VIEW HIT 🔥")
-            try:
-                contact_email.send()
-            except Exception as e:
-                print("Email failed:", e)
+            resend.Emails.send({
+                "from": "onboarding@resend.dev",
+                "to":["contact.aigr0@gmail.com"],
+                "subject":"New Contact Form",
+                "text":email_message,
+            })
             
             messages.success(request, "Your message has been sent successfully. Our team will contact you within 1 business day.")
             return redirect('contact_us')
